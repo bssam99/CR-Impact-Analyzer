@@ -1,0 +1,21 @@
+# Core RAG pipeline
+pymupdf==1.27.2.3
+langchain-text-splitters==1.1.2
+sentence-transformers==5.4.1
+chromadb==1.5.8
+
+# LLM (Ollama over HTTP)
+requests==2.33.1
+
+# Evaluation (notebooks 04 & 05)
+rouge-score==0.1.2
+bert-score==0.3.13
+pandas==3.0.2
+matplotlib==3.10.9
+seaborn==0.13.2
+numpy==2.4.4
+tqdm==4.67.3
+
+# Notebook environment
+jupyterlab==4.5.7
+ipykernel==7.2.0

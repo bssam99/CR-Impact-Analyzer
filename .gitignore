@@ -1,0 +1,22 @@
+# Data & generated artifacts — never commit real documents or outputs
+pdfs/
+vector_store/
+analyses/
+evaluations/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
