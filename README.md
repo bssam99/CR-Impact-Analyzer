@@ -1,5 +1,10 @@
 # CR Impact Analyzer
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-vector%20store-FF6F00)
+![Ollama](https://img.shields.io/badge/Ollama-local%20LLMs-000000)
+
 A local, fully offline **RAG (Retrieval-Augmented Generation) pipeline** that reads a system's technical documentation (PDFs) and automatically generates a structured **impact analysis** for a given Change Request (CR) — affected components, dependencies, risks, and test scope — grounded only in the retrieved docs.
 
 Built with **LangChain**, **ChromaDB**, **Sentence-Transformers**, and **Ollama** (local LLMs — no API keys, no data leaving your machine). Includes a full evaluation harness that scores and compares LLMs on faithfulness, relevancy, and structure, and a hyperparameter search over the entire RAG configuration space (embedding model, chunk size/overlap, top-k, LLM).
@@ -30,7 +35,7 @@ Retrieval is **hybrid**: it first pulls chunks specifically tagged with the CR n
 | 4 | [`04_evaluate_models.ipynb`](notebooks/04_evaluate_models.ipynb) | Compares LLMs (faithfulness, answer relevancy, ROUGE-L, BERTScore, structure, speed) |
 | 5 | [`05_hyperparameter_evaluation.ipynb`](notebooks/05_hyperparameter_evaluation.ipynb) | Grid search over embedding model, chunk size/overlap, top-k, and LLM |
 
-[`archive/`](archive/) holds earlier iterations of notebooks 2 and 3, kept to show how retrieval evolved (bigger chunks to preserve full procedure steps, CR-targeted + general hybrid retrieval, reranking).
+Retrieval was improved over several iterations: bigger chunks to keep full procedure steps intact, hybrid CR-targeted + general retrieval, and reranking.
 
 ## Results
 
@@ -73,3 +78,7 @@ pip install -r requirements.txt
 ## License
 
 [MIT](LICENSE)
+
+## Author
+
+**Bssam Ahmed** · [LinkedIn](https://www.linkedin.com/in/bssam-ahmed) · [GitHub](https://github.com/bssam99)
