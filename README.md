@@ -69,7 +69,7 @@ pip install -r requirements.txt
 2. Drop your PDFs into the `pdfs/` folder it creates.
 3. Run `notebooks/02_build_vectordb.ipynb` once to build the vector store.
 4. Run `notebooks/03_analyze_cr.ipynb` any time you have a new CR to analyze.
-5. (Optional) Run notebooks 4–5 to evaluate models/hyperparameters on your own document set.
+5. (Optional) Run notebooks 4–5 to evaluate models/hyperparameters on your own document set. Notebook 4's `EMBEDDING_MODEL` must match the one the vector store was built with in Notebook 2.
 
 ## Tech stack
 
