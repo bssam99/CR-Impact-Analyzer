@@ -3,6 +3,7 @@ pdfs/
 vector_store/
 analyses/
 evaluations/
+eval_stores/
 
 # Python
 __pycache__/
